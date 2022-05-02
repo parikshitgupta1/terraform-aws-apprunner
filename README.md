@@ -146,10 +146,6 @@ No modules.
 | <a name="output_service_url"></a> [service\_url](#output\_service\_url) | The App Runner Service URL |
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 
-## Authors
-
-Module is maintained by [Bill Hegazy](https://github.com/parikshitgupta1).
-
 ## License
 
 Apache 2 Licensed. See [LICENSE](https://github.com/parikshitgupta1/terraform-aws-apprunner/tree/main/LICENSE) for full details
