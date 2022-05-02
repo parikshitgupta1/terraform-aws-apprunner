@@ -13,7 +13,7 @@ Terraform module which creates AWS AppRunner resources, currently only creates `
 
 ```hcl
 module "hello_app_runner" {
-  source = "bhegazy/terraform-aws-app-runner"
+  source = "parikshitgupta1/terraform-aws-app-runner"
 
   create = true
   service_name             = "hello-app-runner"
@@ -31,11 +31,11 @@ module "hello_app_runner" {
 
 ### Create App runner service from private image source (ECR) for example
 
-> Example uses [aws-app-runner-rust-example](https://github.com/bhegazy/aws-app-runner-rust-example)
+> Example uses [aws-app-runner-rust-example](https://github.com/parikshitgupta1/aws-app-runner-rust-example)
 
 ```hcl
 module "image_repository_private" {
-  source = "bhegazy/terraform-aws-app-runner"
+  source = "parikshitgupta1/terraform-aws-app-runner"
 
   create = true
   service_name             = "my-service"
@@ -64,7 +64,7 @@ module "image_repository_private" {
 
 ```hcl
 module "code_repository_source" {
-  source = "bhegazy/terraform-aws-app-runner"
+  source = "parikshitgupta1/terraform-aws-app-runner"
   
   create = true
   service_name             = "my-service"
@@ -76,17 +76,17 @@ module "code_repository_source" {
   service_source_type      = "code"
   auto_deployments_enabled = true
   code_connection_arn       = aws_apprunner_connection.main.arn
-  code_repository_url       = "https://github.com/bhegazy/apprunner-python-app"
+  code_repository_url       = "https://github.com/parikshitgupta1/apprunner-python-app"
   code_version_type         = "BRANCH"
   code_version_value        = "main"
   code_configuration_source = "REPOSITORY"
 }
 ```
 ### Examples
-- [AWS App Runner Hello App](https://github.com/bhegazy/terraform-aws-apprunner/blob/main/examples/hello-app-runner)
-- [Complete Code Source](https://github.com/bhegazy/terraform-aws-apprunner/tree/main/examples/complete_code_source_api)
-- [Code Source with App Config (apprunner.yaml)](https://github.com/bhegazy/terraform-aws-apprunner/tree/main/examples/code_source_config_apprunner.yaml)
-- [Image Source (Private ECR)](https://github.com/bhegazy/terraform-aws-apprunner/tree/main/examples/image_repository_private)
+- [AWS App Runner Hello App](https://github.com/parikshitgupta1/terraform-aws-apprunner/blob/main/examples/hello-app-runner)
+- [Complete Code Source](https://github.com/parikshitgupta1/terraform-aws-apprunner/tree/main/examples/complete_code_source_api)
+- [Code Source with App Config (apprunner.yaml)](https://github.com/parikshitgupta1/terraform-aws-apprunner/tree/main/examples/code_source_config_apprunner.yaml)
+- [Image Source (Private ECR)](https://github.com/parikshitgupta1/terraform-aws-apprunner/tree/main/examples/image_repository_private)
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 ## Requirements
@@ -148,8 +148,8 @@ No modules.
 
 ## Authors
 
-Module is maintained by [Bill Hegazy](https://github.com/bhegazy).
+Module is maintained by [Bill Hegazy](https://github.com/parikshitgupta1).
 
 ## License
 
-Apache 2 Licensed. See [LICENSE](https://github.com/bhegazy/terraform-aws-apprunner/tree/main/LICENSE) for full details
+Apache 2 Licensed. See [LICENSE](https://github.com/parikshitgupta1/terraform-aws-apprunner/tree/main/LICENSE) for full details
